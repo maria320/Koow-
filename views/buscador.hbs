@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">np
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador</title>
+
+    <link rel="stylesheet" href="CSS/bus.css">
+
+    <!--Links para los iconos-->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+
+
+    <link rel="stylesheet" href="css/bus.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <img src="Data/logo-01.png" alt="">
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="icono fa fa-bars" aria-hidden="true">
+                    </i>
+                </a>
+            </div>
+
+            <div class="enlaces" id="enlaces">
+                <a class="home" href="#">New</a>
+                <a class="how" href="#">Books</a>
+                <a class="book" href="#">Tops</a>
+                <a class="contact" href="#">Ebook</a>
+                <a class="contact" href="#">Sing In</a>
+            </div>
+        </nav>
+    </header>
+    <!--                              /header cerrado____________________ -->
+
+
+
+
+
+
+
+
+    <!--                              /libros____________________ -->
+    <section class="cuerpo">
+        <div class="container">
+            <div class="arrow arrow-left">
+                <i class="fas fa-chevron-circle-left"></i>
+            </div>
+            <img src="Data\1.jpg" alt="">
+            <img src="Data\2.jpg" alt="">
+            <img src="https://images.unsplash.com/photo-1471138406156-7a89e687a062?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=7820fc816715b37942a793360b785c60"
+                alt="">
+            <div class="arrow arrow-right">
+                <i class="fas fa-chevron-circle-right"></i>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar">
+            </div>
+
+        </div>
+
+
+        </div>
+        <div class="dentro">
+            <!--Parte Izquierda de la pantalla-->
+            <div class="filtro">
+                <div class="filbotones">
+                    <div class="filtema">
+                        <h2>Thematic...</h2>
+                        <a href="/buscador?tematica=Drama">Drama</a>
+                        <a href="/buscador?tematica=Fantasia">Fantasia</a>
+                        <a href="/buscador?tematica=Narrativa">Narrativa</a>
+                        <a href="/buscador?tematica=Autobiografía">Autobiografía</a>
+                        <a href="/buscador">Todas</a>
+                    </div>
+                    <div class="filidio">
+                        <h2>Language...</h2>
+                        <a href="/buscador?idioma=English">English</a>
+                        <a href="/buscador?idioma=French">French</a>
+                        <a href="/buscador?idioma=Spanish">Spanish</a>
+                        <a href="/buscador?idioma=All">All</a>
+                        <a href="/buscador">Todas</a>
+                    </div>
+                    <div class="filedito">
+                        <h2>Editorial...</h2>
+                        <a href="/buscador?editorial=Salamandra">Salamandra</a>
+                        <a href="/buscador?editorial=Planeta">Planeta</a>
+                        <a href="/buscador">Todas</a>
+                    </div>
+                    <div class="filcali">
+                        <h2>Score...</h2>
+                        <a href="/buscador?calificacion=5">5</a>
+                        <a href="/buscador?calificacion=4">4</a>
+                        <a href="/buscador?calificacion=3">3</a>
+                        <a href="/buscador?calificacion=2">2</a>
+                        <a href="/buscador?calificacion=1">1</a>
+                        <a href="/buscador">Todas</a>
+                    </div>
+                </div>
+                <h2>Carrito:
+                    <span class="carrito">0</span>
+                </h2>
+            </div>
+
+            <!--Parte Derecha de la pantalla-->
+            <div class="libros">
+
+                <div class="mostrar">
+                    {{#each productos}}
+                    <div class="libro" data-id="{{this._id}}">
+                        <div class="imagen" style="background-image: url({{libro}});"></div>
+                        <div class="descri">
+                            <p class="nom">
+                                <b>{{nombre}}</b>
+                            </p>
+                            <p class="desc">
+                                Pages: {{paginas}}
+                            </p>
+                            <p class="desc">
+                                Language: {{idioma}}
+                            </p>
+                            <p class="desc">
+                                ${{precio}}
+                            </p>
+                            <p class="desc">
+                                Start: {{calificacion}}
+                            </p>
+                        </div>
+                        <div class="boton" align="center">
+                            <a href="/reco/specific/{{nombre}}">
+                                <button class="more">Learn More...</button>
+                            </a>
+                            <button class="agregar">Add To Card</button>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--                              /footer______________________-->
+    <footer>
+        <div class="cont-social">
+            <a href="#">
+                <i id="social-fb" class="fab fa-facebook-f social"></i>
+            </a>
+            <a href="#">
+                <i id="social-tw" class="fab fa-twitter social"></i>
+            </a>
+            <a href="#">
+                <i id="social-gp" class="fab fa-google-plus-g social"></i>
+            </a>
+            <a href="#">
+                <i id="social-em" class="fas fa-envelope social"></i>
+            </a>
+        </div>
+    </footer>
+    <!--                                     /footer cerrado_______________________-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/headroom.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/cliente.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+
+
+</html>

@@ -4,7 +4,8 @@
   "description": "koow taller de web pagina de libros ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/nodemon index.js",
+    "mongo": "C:/\"Program Files\"/MongoDB/Server/3.4/bin/mongod"
   },
   "author": "Ana Maria Burbano Franco",
   "license": "ISC",
