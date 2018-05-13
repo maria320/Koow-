@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buscador</title>
 
-    <link rel="stylesheet" href="CSS/bus.css">
+    
 
     <!--Links para los iconos-->
     <link rel="stylesheet" href="css/fontawesome-all.css">
@@ -33,11 +33,16 @@
             </div>
 
             <div class="enlaces" id="enlaces">
-                <a class="home" href="#">New</a>
-                <a class="how" href="#">Books</a>
+                <a class="home" href="/">New</a>
+                <a class="how" href="/buscador">Books</a>
                 <a class="book" href="#">Tops</a>
                 <a class="contact" href="#">Ebook</a>
-                <a class="contact" href="#">Sing In</a>
+                <a class="tienda " href="/carrito">
+                    <div>
+                        <img src="Data/ICONO.png" width="26px" alt="" class="shopping-cart">
+                        <span class="carrito">0</span>
+                    </div>
+                </a>
             </div>
         </nav>
     </header>
@@ -107,9 +112,7 @@
                         <a href="/buscador">Todas</a>
                     </div>
                 </div>
-                <h2>Carrito:
-                    <span class="carrito">0</span>
-                </h2>
+               
             </div>
 
             <!--Parte Derecha de la pantalla-->
@@ -121,7 +124,9 @@
                         <div class="imagen" style="background-image: url({{libro}});"></div>
                         <div class="descri">
                             <p class="nom">
+                                <a class="nombre" href="/bus/libros/{{nombre}}">
                                 <b>{{nombre}}</b>
+                                </a>
                             </p>
                             <p class="desc">
                                 Pages: {{paginas}}
@@ -138,7 +143,7 @@
                         </div>
                         <div class="boton" align="center">
                             <a href="/reco/specific/{{nombre}}">
-                                <button class="more">Learn More...</button>
+                               
                             </a>
                             <button class="agregar">Add To Card</button>
                         </div>

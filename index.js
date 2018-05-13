@@ -28,6 +28,11 @@ app.get('/', (req, res) => {
         tittle: "Home"
     });
 })
+app.get('/carrito', (req, res) => {
+    res.render('carrito', {
+        tittle: "Carrito"
+    });
+})
 
 app.get('/buscador', (req, res) => {
 
@@ -74,12 +79,12 @@ app.get('/producto/:id', (req, res) => {
 
 
 
-app.get('/reco/specific/:nombre', (req, res) => {
+app.get('/buscador/libros/', (req, res) => {
     db.collection('libros').find({
         nombre: req.params.nombre
-    }).toArray((err, result) => res.render('specific', {
+    }).toArray((err, result) => res.render('libros', {
         libro: result[0],
-        tittle: "Specific"
+        tittle: "Libros"
     }))
 
 });
@@ -102,4 +107,13 @@ app.get('/productosPorIds', (req, res) => {
         });
 });
 
+app.get('/bus/libros/:nombre', (req, res) => {
+    db.collection('libros').find({
+        nombre: req.params.nombre
+    }).toArray((err, result) => res.render('libros', {
+        lib: result[0],
+        tittle: "Libros"
+    }))
+
+});
 //holiiiiiiiiiii
