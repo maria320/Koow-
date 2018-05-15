@@ -78,9 +78,9 @@
         </div>
         <div class="dentro">
             <!--Parte Izquierda de la pantalla-->
-            <div class="filtro">
+            <div class="filtros">
                 <div class="filbotones">
-                    <div class="filtema">
+                    <div class="filtrogenero">
                         <h2>Gender</h2>
                         <a href="/buscador?genero=Drama">Drama</a>
                         <a href="/buscador?genero=Children's literature">Children's literature</a>
@@ -88,7 +88,7 @@
                         <a href="/buscador?genero=Horror">Horror</a>
                         <a href="/buscador">All</a>
                     </div>
-                    <div class="filidio">
+                    <div class="filtroidioma">
                         <h2>Language.</h2>
                         <a href="/buscador?idioma=English">English</a>
                         <a href="/buscador?idioma=French">French</a>
@@ -96,7 +96,7 @@
                         <a href="/buscador?idioma=German">German</a>
                         <a href="/buscador">All</a>
                     </div>
-                    <div class="filedito">
+                    <div class="filtroclasificacion">
                         <h2>Clasificacion</h2>
                         <a href="/buscador?clasificacion=Illustrations">Illustrations</a>
                         <a href="/buscador?clasificacion=Graphic Novels">Graphic Novels</a>
@@ -104,8 +104,8 @@
                         <a href="/buscador?clasificacion=Illustrated novel">Illustrated novel</a>
                         <a href="/buscador">All</a>
                     </div>
-                    <div class="filcali">
-                        <h2>Score...</h2>
+                    <div class="filtrocalificacion">
+                        <h2>Score</h2>
                         <a href="/buscador?calificacion=5">5</a>
                         <a href="/buscador?calificacion=4">4</a>
                         <a href="/buscador?calificacion=3">3</a>
@@ -120,7 +120,7 @@
             <!--Parte Derecha de la pantalla-->
             <div class="libros">
 
-                <div class="mostrar">
+                <div class="lib">
                     {{#each productos}}
                     <div class="libro" data-id="{{this._id}}">
                         <div class="imagen" style="background-image: url({{libro}});"></div>

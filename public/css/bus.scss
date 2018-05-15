@@ -12,6 +12,7 @@ $graydark: #cecece;
 $graytext: #4b5f5a;
 $colorp: #0EAA65;
 $verdeOscuro:rgb(4,121,68);
+$color: #E5E5E5;
 $principal: 'Nunito';
 
 * {
@@ -19,7 +20,7 @@ $principal: 'Nunito';
 }
 
 p {
-    font-size: 18px;
+    font-size: 10px;
     margin-bottom: 5px;
 }
 
@@ -28,15 +29,17 @@ a {
 }
 
 body {
-    background: $white;
+    background: $color;
 }
 
 .dentro {
+
     width: 100%;
-    height: 100em;
+    height: 110em;
     margin-top: 10em;
     margin-left: 5%;
-    .filtro {
+  
+    .filtros {
         width: 20%;
         background: $colorp; 
         float: left;
@@ -55,7 +58,7 @@ body {
             }
         }
         .filbotones {
-            .filtema {
+            .filtrogenero{
                 h2 {
                     color: $white;
                     font-size: 1.5em;
@@ -78,7 +81,7 @@ body {
 
                 }
             }
-            .filidio {
+            .filtroidioma {
                 h2 {
                     color: $white;
                     font-size: 1.5em;
@@ -99,7 +102,7 @@ body {
                     padding: 2% 0 2% 25%;
                 }
             }
-            .filedito {
+            .filtroclasificacion {
                 h2 {
                     color: $white;
                     font-size: 1.5em;
@@ -121,7 +124,7 @@ body {
                     padding: 2% 0 2% 25%;
                 }
             }
-            .filcali {
+            .filtrocalificacion {
                 h2 {
                     color: $white;
                     font-size: 1.5em;
@@ -177,28 +180,29 @@ body {
     }
     .libros {
         width: 80%;
-        height: 100em;
+        height: 110em;
         float: left;
-        .mostrar {
+        .lib {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
+            height: 110em;
             padding: 20px;
             .libro {
                 width: 20%;
                 background: $white;
                 margin: 20px;
-                border-radius: 6px; //box-shadow: 0px 0px 20px 0px rgba(20, 20, 20, 0.25);
+              
                 .imagen {
                     width: 100%;
-                    height: 15em;
+                    height: 18em;
                     background-size: contain;
                     background-repeat: no-repeat;
-                    border-radius: 6px 6PX;
+               
                 }
                 .descri {
-                    padding: 20px;
-                    height: 8em;
+                    padding: 25px;
+                    height: 10em;
                     margin-bottom: 2em;
                     .nom {
                         font-size: 20px;
@@ -213,7 +217,7 @@ body {
                     }
                 }
                 .boton {
-                    margin: 0px 0;
+                    margin: 10px 0;
                     .agregar {
                         margin: .5em 0;
                         border: none;
