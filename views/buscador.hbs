@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buscador</title>
 
-    
+
 
     <!--Links para los iconos-->
     <link rel="stylesheet" href="css/fontawesome-all.css">
@@ -38,57 +38,46 @@
                 <a class="book" href="#">Tops</a>
                 <a class="contact" href="#">Ebook</a>
                 <a class="tienda " href="/carrito">
+
                     <div>
                         <img src="Data/ICONO.png" width="26px" alt="" class="shopping-cart">
-                        <span class="carrito">0</span>
+                        <span class="carri">0</span>
                     </div>
                 </a>
             </div>
         </nav>
     </header>
     <!--                              /header cerrado____________________ -->
-
-
-
-
-
-
-
-
     <!--                              /libros____________________ -->
     <section class="cuerpo">
         <div class="container">
-        <div class="arrow arrow-left">
-            <i class="fas fa-chevron-circle-left"></i>
-        </div>
-        <img src="Data\1.jpg" alt="">
-        <img src="Data\2.jpg" alt="">
-        <img src="https://images.unsplash.com/photo-1471138406156-7a89e687a062?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=7820fc816715b37942a793360b785c60"
-            alt="">
-        <div class="arrow arrow-right">
-            <i class="fas fa-chevron-circle-right"></i>
-        </div>
+            <div class="arrow arrow-left">
+                <i class="fas fa-chevron-circle-left"></i>
+            </div>
+            <img src="Data\1.jpg" alt="">
+            <img src="Data\2.jpg" alt="">
+            <img src="https://images.unsplash.com/photo-1471138406156-7a89e687a062?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=7820fc816715b37942a793360b785c60"
+                alt="">
+            <div class="arrow arrow-right">
+                <i class="fas fa-chevron-circle-right"></i>
+            </div>
 
-        <div class="dots">
-            <div class="dot">
-                <i class="far fa-dot-circle"></i>
+            <div class="dots">
+                <div class="dot">
+                    <i class="far fa-dot-circle"></i>
+                </div>
+                <div class="dot">
+                    <i class="far fa-circle"></i>
+                </div>
+                <div class="dot">
+                    <i class="far fa-circle"></i>
+                </div>
             </div>
-            <div class="dot">
-                <i class="far fa-circle"></i>
-            </div>
-            <div class="dot">
-                <i class="far fa-circle"></i>
-            </div>
-        </div>
-        
-          <div class="buscar">
+
+            <div class="buscar">
                 <input type="text" placeholder="Buscar">
             </div>
-
-
-    </div>
-      
-
+        </div>
         </div>
         <div class="dentro">
             <!--Parte Izquierda de la pantalla-->
@@ -128,7 +117,7 @@
                         <a href="/buscador">All</a>
                     </div>
                 </div>
-               
+
             </div>
 
             <!--Parte Derecha de la pantalla-->
@@ -136,12 +125,12 @@
                 <div class="lib">
                     {{#each productos}}
                     <div class="libro" data-id="{{this._id}}">
-                       
+
                         <div class="imagen" style="background-image: url({{libro}});"></div>
                         <div class="descri">
                             <p class="nom">
-                                 <a class="nombre" href="/buscador/libro/{{nombre}}">
-                                <b>{{nombre}}</b>
+                                <a class="nombre" href="/buscador/libro/{{nombre}}">
+                                    <b>{{nombre}}</b>
                                 </a>
                             </p>
                             <p class="desc">
@@ -162,6 +151,7 @@
                         </div>
                         <div class="boton" align="center">
                             <button class="agregar">Add To Card</button>
+
                         </div>
                     </div>
                     {{/each}}
@@ -191,11 +181,10 @@
     <!--                                     /footer cerrado_______________________-->
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/headroom.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/cliente.js"></script>
     <script src="js/productos.js"></script>
     <script src="js\java.js"></script>
-    <script src="js\index.js"></script>
+    <script src="js\menu.js"></script>
 
 </body>
 

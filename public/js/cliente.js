@@ -1,6 +1,6 @@
 // carrito
 function actualizarCarrito (){
-    document.querySelector('.carrito').innerHTML = arreglo.length;
+    document.querySelector('.carri').innerHTML = arreglo.length;
 }
 
 var arreglo = JSON.parse(localStorage.getItem('arreglo'));
