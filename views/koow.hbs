@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Libro</title>
+    <title>{{tittle}}</title>
     <!--Links para los iconos-->
-    <link rel="stylesheet" href="css/fontawesome-all.css">
-
-
-    <link rel="stylesheet" href="/css/bus.css">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/fontawesome-all.css">
 
+
+
+    <link rel="stylesheet" href="/css/libro.css">
 </head>
+
 <body>
-     <header id="header">
+    <header id="header">
         <nav class="menu">
             <div class="logo">
                 <img src="/Data/logo-01.png" alt="">
@@ -42,10 +42,10 @@
 
     <section class="cuerpo">
         <!--Parte Mostrar información detallada de los libros-->
-        <div class="spec">
-            <div class="mostrar">
+        <div class="lob">
+            <div class="aqui">
                 <div class="libro" data-id="{{this._id}}">
-                    <div class="imagen" style="background-image: url(/{{libro.libro}});"></div>
+                    <div class="imagen" style="background-image: url(/{{lib.libro}});"></div>
                     <div class="descri">
                         <p class="nom">
                             <b>{{lib.nombre}}</b>
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="boton" align="center">
-                        <a href="/reco">
+                        <a href="/buscador">
                             <button class="atras">Back?</button>
                         </a>
                         <button class="agregar">Add To Card</button>
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-     <footer>
+    <footer>
         <div class="cont-social">
             <a href="#">
                 <i id="social-fb" class="fab fa-facebook-f social"></i>
@@ -113,15 +113,11 @@
     </footer>
 
 
-     <script src="/js/jquery-3.3.1.js"></script>
-   
+    <script src="/js/jquery-3.3.1.js"></script>
     <script src="/js/headroom.js"></script>
-
-
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
     <script src="/js/cliente.js"></script>
     <script src="/js/productos.js"></script>
-    <script src="/js/recommended.js"></script>
 </body>
+
 </html>

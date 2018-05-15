@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{tittle}}</title>
+        <!--Links para los iconos-->
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+
+
+
+    <link rel="stylesheet" href="/css/libro.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <img src="/Data/logo-01.png" alt="">
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="icono fa fa-bars" aria-hidden="true">
+                    </i>
+                </a>
+            </div>
+
+            <div class="enlaces" id="enlaces">
+                <a class="home" href="/">New</a>
+                <a class="how" href="/buscador">Books</a>
+                <a class="book" href="#">Tops</a>
+                <a class="contact" href="#">Ebook</a>
+                <a class="tienda " href="/carrito">
+                    <div>
+                        <img src="/Data/ICONO.png" width="26px" alt="" class="shopping-cart">
+                        <span class="carrito">0</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cuerpo">
+        <!--Parte Mostrar información detallada de los libros-->
+        <div class="lob">
+            <div class="aqui">
+                {{#each productos}}
+                <div class="libro" data-id="{{this._id}}">
+                    <div class="imagen" style="background-image: url(/{{lib.libro}});"></div>
+                    <div class="descri">
+                        <p class="nom">
+                            <b>{{lib.nombre}}</b>
+                        </p>
+                        <div class="container">
+                            <div class="text">
+                                <p class="desc">
+                                    {{lib.descrip}}
+                                </p>
+                            </div>
+                            <div class="dat">
+                                <p class="datos">
+                                    Author: {{lib.autor}}
+                                </p>
+                                <p class="datos">
+                                    Editorial: {{lib.editorial}}
+                                </p>
+                                <p class="datos">
+                                    Thematic: {{lib.tematica}}
+                                </p>
+                                <p class="datos">
+                                    Pages: {{lib.paginas}}
+                                </p>
+                                <p class="datos">
+                                    Language: {{lib.idioma}}
+                                </p>
+                                <p class="datos">
+                                    Year: {{lib.ano}}
+                                </p>
+                                <p class="datos">
+                                    Price: ${{lib.precio}}
+                                </p>
+                                <p class="datos">
+                                    Start: {{lib.calificacion}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boton" align="center">
+                        <a href="/reco">
+                            <button class="atras">Back?</button>
+                        </a>
+                        <button class="agregar">Add To Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="cont-social">
+            <a href="#">
+                <i id="social-fb" class="fab fa-facebook-f social"></i>
+            </a>
+            <a href="#">
+                <i id="social-tw" class="fab fa-twitter social"></i>
+            </a>
+            <a href="#">
+                <i id="social-gp" class="fab fa-google-plus-g social"></i>
+            </a>
+            <a href="#">
+                <i id="social-em" class="fas fa-envelope social"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="/js/jquery-3.3.1.js"></script>
+    <script src="/js/headroom.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/js/cliente.js"></script>
+    <script src="/js/productos.js"></script>
+    <script src="/js/recommended.js"></script>
+    <script src="/js\java.js"></script>
+    <script src="/js\index.js"></script>
+</body>
+
+</html>

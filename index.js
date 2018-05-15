@@ -71,32 +71,13 @@ app.get('/checkout', (req, res) => {
     res.render('checkout');
 });
 
-
-app.get('/producto/:id', (req, res) => {
-    db.collection('productos').find({ modelo: req.params.id }).toArray((err, result) => res.send(result))
-});
-
-
-
-
-app.get('/buscador/libros/', (req, res) => {
-    db.collection('libros').find({
-        nombre: req.params.nombre
-    }).toArray((err, result) => res.render('libros', {
-        libro: result[0],
-        tittle: "Libros"
-    }))
-
-});
-
-
 app.get('/productosPorIds', (req, res) => {
     console.log(req.query.ids);
     var arreglo = req.query.ids.split(',');
     arreglo = arreglo.map(function (id) {
         return new ObjectID(id);
     });
-    var prod = db.collection('libros')
+    var prod = db.collection('koows')
         .find({
             _id: {
                 $in: arreglo
@@ -107,10 +88,10 @@ app.get('/productosPorIds', (req, res) => {
         });
 });
 
-app.get('/bus/libros/:nombre', (req, res) => {
-    db.collection('libros').find({
+app.get('/buscador/libro/:nombre', (req, res) => {
+    db.collection('koows').find({
         nombre: req.params.nombre
-    }).toArray((err, result) => res.render('libros', {
+    }).toArray((err, result) => res.render('koow', {
         lib: result[0],
         tittle: "Libros"
     }))
