@@ -81,26 +81,28 @@
             <div class="filtro">
                 <div class="filbotones">
                     <div class="filtema">
-                        <h2>Thematic...</h2>
-                        <a href="/buscador?tematica=Drama">Drama</a>
-                        <a href="/buscador?tematica=Fantasia">Fantasia</a>
-                        <a href="/buscador?tematica=Narrativa">Narrativa</a>
-                        <a href="/buscador?tematica=Autobiografía">Autobiografía</a>
-                        <a href="/buscador">Todas</a>
+                        <h2>Gender</h2>
+                        <a href="/buscador?genero=Drama">Drama</a>
+                        <a href="/buscador?genero=Children's literature">Children's literature</a>
+                        <a href="/buscador?genero=Fantasy">Fantasy</a>
+                        <a href="/buscador?genero=Horror">Horror</a>
+                        <a href="/buscador">All</a>
                     </div>
                     <div class="filidio">
-                        <h2>Language...</h2>
+                        <h2>Language.</h2>
                         <a href="/buscador?idioma=English">English</a>
                         <a href="/buscador?idioma=French">French</a>
                         <a href="/buscador?idioma=Spanish">Spanish</a>
-                        <a href="/buscador?idioma=All">All</a>
-                        <a href="/buscador">Todas</a>
+                        <a href="/buscador?idioma=German">German</a>
+                        <a href="/buscador">All</a>
                     </div>
                     <div class="filedito">
-                        <h2>Editorial...</h2>
-                        <a href="/buscador?editorial=Salamandra">Salamandra</a>
-                        <a href="/buscador?editorial=Planeta">Planeta</a>
-                        <a href="/buscador">Todas</a>
+                        <h2>Clasificacion</h2>
+                        <a href="/buscador?clasificacion=Illustrations">Illustrations</a>
+                        <a href="/buscador?clasificacion=Graphic Novels">Graphic Novels</a>
+                        <a href="/buscador?clasificacion=Illustrated story">Illustrated story</a>
+                        <a href="/buscador?clasificacion=Illustrated novel">Illustrated novel</a>
+                        <a href="/buscador">All</a>
                     </div>
                     <div class="filcali">
                         <h2>Score...</h2>
@@ -109,7 +111,7 @@
                         <a href="/buscador?calificacion=3">3</a>
                         <a href="/buscador?calificacion=2">2</a>
                         <a href="/buscador?calificacion=1">1</a>
-                        <a href="/buscador">Todas</a>
+                        <a href="/buscador">All</a>
                     </div>
                 </div>
                
@@ -129,7 +131,7 @@
                                 </a>
                             </p>
                             <p class="desc">
-                                Pages: {{paginas}}
+                                Pages: {{Page}}
                             </p>
                             <p class="desc">
                                 Language: {{idioma}}
@@ -139,6 +141,9 @@
                             </p>
                             <p class="desc">
                                 Start: {{calificacion}}
+                            </p>
+                            <p class="desc">
+                                Start: {{clasificacion}}
                             </p>
                         </div>
                         <div class="boton" align="center">

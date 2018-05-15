@@ -39,9 +39,9 @@ app.get('/buscador', (req, res) => {
     var prod = db.collection('koows')
         .find();
     
-        if (req.query.tematica)
+        if (req.query.genero)
         prod.filter({
-            tematica: req.query.tematica
+            genero: req.query.genero
         });
 
     if (req.query.idioma)
@@ -49,9 +49,9 @@ app.get('/buscador', (req, res) => {
             idioma: req.query.idioma
         });
 
-    if (req.query.editorial)
+    if (req.query.clasificacion)
         prod.filter({
-            editorial: req.query.editorial
+            clasificacion: req.query.clasificacion
         });
 
     if (req.query.calificacion)
@@ -116,4 +116,4 @@ app.get('/bus/libros/:nombre', (req, res) => {
     }))
 
 });
-//holiiiiiiiiiii
+
