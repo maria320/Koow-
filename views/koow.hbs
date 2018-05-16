@@ -8,7 +8,7 @@
     <title>{{tittle}}</title>
     <!--Links para los iconos-->
     <link rel="stylesheet" href="/css/fontawesome-all.css">
-      <link rel="stylesheet" href="/css/bus.css">
+    <link rel="stylesheet" href="/css/bus.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/fontawesome-all.css">
 
@@ -49,23 +49,24 @@
         <div class="lob">
             <div class="aqui">
                 <div class="libro" data-id="{{this._id}}">
-                    <div class="imagen" style="background-image: url(/{{lib.libro}});"></div>
+
+
                     <div class="descri">
-                        <p class="nom">
-                            <b>{{lib.nombre}}</b>
-                        </p>
-                        <p class="datos">
-                                    Start: {{lib.calificacion}}
+                        <div class="primera">
+
+
+                            <div class="imagen" style="background-image: url(/{{lib.libro}});"></div>
+
+
+                            <div class="base">
+                                <p class="nom">
+                                    <b>{{lib.nombre}}</b>
                                 </p>
-                        <div class="container">
-                            <div class="text">
-                                <p class="desc">
-                                    {{lib.Descripcion}}
-                                </p>
-                            </div>
-                            <div class="dat">
-                                <p class="datos">
+                                <p class="aut">
                                     Author: {{lib.autor}}
+                                </p>
+                                <p class="sta">
+                                    Start: {{lib.calificacion}}
                                 </p>
                                 <p class="datos">
                                     Classification: {{lib.clasificacion}}
@@ -76,24 +77,38 @@
                                 <p class="datos">
                                     Number of Illustrations: {{lib.ilustraciones}}
                                 </p>
-                                <p class="datos">
-                                    Language: {{lib.idioma}}
-                                </p>
-                                <p class="datos">
-                                    Page: {{lib.Page}}
-                                </p>
-                                <p class="datos">
+
+                            </div>
+
+                            <div class="compra">
+
+                                <p class="precio">
                                     Price: ${{lib.precio}}
                                 </p>
-                                
+                                <h4>¡Tus compras están seguras!</h4>
+                                <h4>Devoluciones gratuitas</h4>
+
+                                <button class="agregar">Add To Card</button>
+
+
                             </div>
                         </div>
+
+                        <div class="segunda">
+                            <div class="text">
+                                <p class="desc">
+                                    {{lib.Descripcion}}
+                                </p>
+                            </div>
+
+                        </div>
+
                     </div>
                     <div class="boton" align="center">
                         <a href="/buscador">
                             <button class="atras">Back</button>
                         </a>
-                        <button class="agregar">Add To Card</button>
+
                     </div>
                 </div>
             </div>
