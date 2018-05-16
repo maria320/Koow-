@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
 $white: #FFF;
 $black: #000;
-$slide: #efd2ca;
-$red: #ff0000;
-$rose: #EF6F7F;
-$model: #fcf4e8;
-$blue: #3e8edd;
-$gray: #cecece;
-$graydark: #4f4f4f;
-* {
-    font-family: "Nunito", sans-serif;
-}
+$white: #FFF;
+$black: #000;
+$colorp: #0EAA65;
+$verdeOscuro:rgb(4,121,68);
+$color: #E5E5E5;
+$principal: 'Nunito';
 
 p {
     font-size: 18px;
@@ -18,7 +14,7 @@ p {
 }
 
 body {
-    height: 100vh;
+    height: 100em;
 }
 
 .lob{

@@ -1,23 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
 $white: #FFF;
-
 $black: #000;
-$slide: #efd2ca;
-$red: #ff0000;
-$rose: #EF6F7F;
-$model: #fcf4e8;
-$blue: #3e8edd;
-$gray: #ebe9e9;
-$graydark: #cecece;
-$graytext: #4b5f5a;
 $colorp: #0EAA65;
 $verdeOscuro:rgb(4,121,68);
 $color: #E5E5E5;
 $principal: 'Nunito';
-
-* {
-    font-family: "Nunito", sans-serif;
-}
 
 p {
     font-size: 10px;
@@ -146,49 +133,16 @@ body {
                 }
             } 
         }
-        .filbarras {
-            width: 100%;
-            .filprecio {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-content: stretch;
-                align-items: center;
-                h2 {
-                    color: $rose;
-                    font-size: 1.5em;
-                    padding: 5% 0 5% 0;
-                    width: 100%;
-                    text-align: center;
-                    font-family: "Nunito", sans-serif;
-                }
-                .numer {
-                    width: 100%;
-                    text-align: center;
-                    #demo {
-                        text-align: center;
-                        font-family: "Nunito", sans-serif;
-                        font-size: 18px;
-                       
-                    }
-                }
-                .minMax {
-                    width: 80%;
-                }
-                
-            }
-        }
     }
     .libros {
         width: 80%;
-        height: 110em;
+    
         float: left;
         .lib {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            height: 110em;
+            
             padding: 20px;
             .libro {
                 width: 20%;
