@@ -8,6 +8,10 @@
     <title>{{tittle}}</title>
     <!--Links para los iconos-->
     <link rel="stylesheet" href="/css/fontawesome-all.css">
+      <link rel="stylesheet" href="/css/bus.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+
 
 
 
@@ -50,10 +54,13 @@
                         <p class="nom">
                             <b>{{lib.nombre}}</b>
                         </p>
+                        <p class="datos">
+                                    Start: {{lib.calificacion}}
+                                </p>
                         <div class="container">
                             <div class="text">
                                 <p class="desc">
-                                    {{lib.descrip}}
+                                    {{lib.Descripcion}}
                                 </p>
                             </div>
                             <div class="dat">
@@ -61,32 +68,30 @@
                                     Author: {{lib.autor}}
                                 </p>
                                 <p class="datos">
-                                    Editorial: {{lib.editorial}}
+                                    Classification: {{lib.clasificacion}}
                                 </p>
                                 <p class="datos">
-                                    Thematic: {{lib.tematica}}
+                                    Gender: {{lib.genero}}
                                 </p>
                                 <p class="datos">
-                                    Pages: {{lib.paginas}}
+                                    Number of Illustrations: {{lib.ilustraciones}}
                                 </p>
                                 <p class="datos">
                                     Language: {{lib.idioma}}
                                 </p>
                                 <p class="datos">
-                                    Year: {{lib.ano}}
+                                    Page: {{lib.Page}}
                                 </p>
                                 <p class="datos">
                                     Price: ${{lib.precio}}
                                 </p>
-                                <p class="datos">
-                                    Start: {{lib.calificacion}}
-                                </p>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="boton" align="center">
                         <a href="/buscador">
-                            <button class="atras">Back?</button>
+                            <button class="atras">Back</button>
                         </a>
                         <button class="agregar">Add To Card</button>
                     </div>
