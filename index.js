@@ -28,6 +28,13 @@ app.get('/', (req, res) => {
         tittle: "Home"
     });
 })
+
+app.get('/playlist', (req, res) => {
+    res.render('playlist', {
+        tittle: "PlayList"
+    });
+})
+
 app.get('/carrito', (req, res) => {
     res.render('carrito', {
         tittle: "Carrito"

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{tittle}}</title>
+	<meta name="description" content="A slideshow with a CSS glitch effect for transitioning between slides" />
+	<meta name="keywords" content="slideshow, glitch, effect, css, clip-path, web dev, web design" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/stylem.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/glitch-slideshow.css" />
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports &&
+				window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="demo-2 loading">
+
+	<main>
+
+		<div class="content">
+
+
+
+			<div class="slides slides--contained effect-2">
+
+				<div class="slide slide--current">
+
+					<div class="slide__img glitch" style="background-image: url(Data/img/1.jpg);" id="holi"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Broken Glow</h2>
+						<a href="#" title="Listen to the song" class="player-controls">
+							<span class="play"></span>
+							<span class="pause"></span>
+							<span class="audio-label">
+								<span>
+									Drake
+									<small>One Dance</small>
+								</span>
+							</span>
+						</a>
+						<audio id="player">
+							<source src="http://thiagovieira.com/images/OneDance-Drake.mp3" type="audio/mp3">
+						</audio>
+					</div>
+				</div>
+
+
+
+
+				<div class="slide">
+					<div class="slide__img glitch" style="background-image: url(Data/img/2.jpg);" id="holi"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Morning Dew</h2>
+						<p class="slide__description">You have learn to bury your guilt with anger. I will teach you to confront it and to face the truth.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img glitch" style="background-image: url(Data/img/3.jpg);" id="holi"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Crystal Way</h2>
+						<p class="slide__description">I just the took to calling it the Bat. And yes Mr. Wayne, it does come in black.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img glitch" style="background-image: url(Data/img/4.jpg);" id="holi"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Fine Quest</h2>
+						<p class="slide__description">You have nothing, nothing to threaten me with. Nothing to do with all your strength.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img glitch" style="background-image: url(Data/img/5.jpg);" id="holi"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Dome Being</h2>
+						<p class="slide__description">I'll be standing where l belong. Between you and the people of Gotham.</p>
+					</div>
+				</div>
+			</div>
+			<nav class="slide-nav">
+				<button class="slide-nav__button">
+					<span>Previous</span>
+				</button>
+				<button class="slide-nav__button next">
+					<span>Next</span>
+				</button>
+			</nav>
+		</div>
+	</main>
+
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/demo2.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html
