@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+body {
+  height: 100em;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+.lob {
+  width: 100%;
+  margin-top: 10em;
+  background: #FFF;
+}
+
+.lob .aqui {
+  width: 100%;
+  display: flex;
+}
+
+.lob .aqui .libro {
+  width: 100%;
+  background: #FFF;
+}
+
+.lob .aqui .libro .descri {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
+}
+
+.lob .aqui .libro .descri .primera {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.lob .aqui .libro .descri .primera .imagen {
+  width: 35%;
+}
+
+.lob .aqui .libro .descri .primera .base {
+  width: 30%;
+}
+
+.lob .aqui .libro .descri .primera .base .nom {
+  font-size: 35px;
+  margin-bottom: 0.4em;
+}
+
+.lob .aqui .libro .descri .primera .base .datos {
+  font-size: 14px;
+  margin-bottom: 0.4em;
+  font-style: italic;
+}
+
+.lob .aqui .libro .descri .primera .compra {
+  width: 35%;
+  background: #0EAA65;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.lob .aqui .libro .descri .primera .compra .precio {
+  font-size: 40px;
+  margin-bottom: 0.4em;
+  color: #FFF;
+}
+
+.lob .aqui .libro .descri .primera .compra h4 {
+  font-size: 15px;
+  color: #FFF;
+}
+
+.lob .aqui .libro .descri .primera .compra .boton {
+  margin: 10px 0;
+}
+
+.lob .aqui .libro .descri .primera .compra .boton .agregar {
+  margin: .5em 0;
+  border: none;
+  background: #0EAA65;
+  color: #FFF;
+  font-size: 10px;
+  border-radius: 25px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  padding: 1em 2em;
+  overflow: hidden;
+}
+
+.lob .aqui .libro .descri .segunda {
+  width: 100%;
+  height: 25em;
+  background: #0EAA65;
+  margin-top: 5em;
+}
+
+.lob .aqui .libro .descri .segunda .text {
+  width: 60%;
+  margin: 10% 20%;
+  color: #FFF;
+}
+/*# sourceMappingURL=libro.css.map */
