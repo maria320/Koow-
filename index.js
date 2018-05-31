@@ -14,13 +14,18 @@ app.set('view engine', 'hbs');
 app.use(express.static('public'));
 
 // Conectarse a Base de Datos
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('', {
+    auth: {
+        user: 'thamior',
+        password: 'ClaveSegura1.'
+    }
+}, function (err, client) {
     if (err) throw err;
 
-    db = client.db('test');
+    db = client.db('tienda');
 
     // Iniciar servidor
-    app.listen(4321);
+    app.listen(process.EINVAL.PORT || 4321);
 });
 /*Esta parte es para cargar las paginas*/
 app.get('/', (req, res) => {
@@ -80,12 +85,16 @@ app.get('/checkout', (req, res) => {
 
 app.get('/productosPorIds', (req, res) => {
     var arreglo = req.query.id.split(',');
-    arreglo = arreglo.map(function(id) {
+    arreglo = arreglo.map(function (id) {
         return new ObjectID(id);
     });
-    
+
     var prod = db.collection('koows')
-        .find({ _id: { $in: arreglo } })
+        .find({
+            _id: {
+                $in: arreglo
+            }
+        })
         .toArray((err, result) => {
             res.send(result);
         });
