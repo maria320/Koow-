@@ -16,7 +16,7 @@ app.use(express.static('public'));
 // Conectarse a Base de Datos
 MongoClient.connect('mongodb+srv:finalweb-z5kte.mongodb.net/tienda', {
     auth: {
-        user: 'thamior',
+        user: 'Thamior',
         password: 'ClaveSegura1.'
     }
 }, function (err, client) {
