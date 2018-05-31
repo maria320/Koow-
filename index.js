@@ -89,7 +89,7 @@ app.get('/productosPorIds', (req, res) => {
         return new ObjectID(id);
     });
 
-    var prod = db.collection('koows')
+    var prod = db.collection('productos')
         .find({
             _id: {
                 $in: arreglo
@@ -101,7 +101,7 @@ app.get('/productosPorIds', (req, res) => {
 });
 
 app.get('/buscador/libro/:nombre', (req, res) => {
-    db.collection('koows').find({
+    db.collection('productos').find({
         nombre: req.params.nombre
     }).toArray((err, result) => res.render('koow', {
         lib: result[0],
