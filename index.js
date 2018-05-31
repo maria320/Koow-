@@ -14,7 +14,7 @@ app.set('view engine', 'hbs');
 app.use(express.static('public'));
 
 // Conectarse a Base de Datos
-MongoClient.connect('', {
+MongoClient.connect('mongodb+srv:finalweb-z5kte.mongodb.net/tienda', {
     auth: {
         user: 'thamior',
         password: 'ClaveSegura1.'
@@ -25,7 +25,7 @@ MongoClient.connect('', {
     db = client.db('tienda');
 
     // Iniciar servidor
-    app.listen(process.EINVAL.PORT || 4321);
+    app.listen(process.env.PORT || 4321);
 });
 /*Esta parte es para cargar las paginas*/
 app.get('/', (req, res) => {
@@ -48,7 +48,7 @@ app.get('/carrito', (req, res) => {
 
 app.get('/buscador', (req, res) => {
 
-    var prod = db.collection('koows')
+    var prod = db.collection('productos')
         .find();
 
     if (req.query.genero)
