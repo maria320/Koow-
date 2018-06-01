@@ -9,7 +9,7 @@
             "biblioteca": "Album",
             "precio": 75,
             "calificacion": 5,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-10.jpg"
             
         },
         {
@@ -21,10 +21,10 @@
             "biblioteca": "Album",
             "precio": 50,
             "calificacion": 4,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-07.jpg"
         },
         {
-            "nombre": "Audio",
+            "nombre": "Alone",
             "autor": "Halsey",
             "extension": 2,
             "idioma": "English",
@@ -32,7 +32,7 @@
             "biblioteca": "Song",
             "precio": 3,
             "calificacion": 5,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-03.jpg"
         },
         {
             "nombre": "again-short ver",
@@ -43,7 +43,7 @@
             "biblioteca": "Song",
             "precio": 2,
             "calificacion": 3,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-06.jpg"
         },
         {
             "nombre": "Encanto Tropica",
@@ -54,7 +54,7 @@
             "biblioteca": "Album",
             "precio": 40,
             "calificacion": 4,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-02.jpg"
         },
         {
             "nombre": "Sonne",
@@ -65,7 +65,7 @@
             "biblioteca": "Song",
             "precio": 5,
             "calificacion": 2,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-08.jpg"
         },
         {
             "nombre": "FRIENDS",
@@ -76,7 +76,7 @@
             "biblioteca": "Song",
             "precio": 4,
             "calificacion": 2,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-09.jpg"
         },
         {
             "nombre": "Bye Bye",
@@ -87,7 +87,7 @@
             "biblioteca": "Song",
             "precio": 2,
             "calificacion": 2,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-01.jpg"
         },
         {
             "nombre": "Ella and Louis",
@@ -98,7 +98,7 @@
             "biblioteca": "Album",
             "precio": 75,
             "calificacion": 5,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-05.jpg"
         },
         {
             "nombre": "Happy Together",
@@ -109,7 +109,7 @@
             "biblioteca": "One Hit",
             "precio": 5,
             "calificacion": 3,
-            "libro": "Data/g-01.png"
+            "libro": "Data/venta/g-04.jpg"
         }
     ]
 }
