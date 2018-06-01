@@ -355,9 +355,7 @@ main {
 	grid-template-areas: 'header demos' '... info' 'github info';
 }
 
-.demo-1 .content--fixed {
-	padding: 1rem 1.75rem 1rem 1rem;
-}
+
 
 .content--fixed a {
 	pointer-events: auto;

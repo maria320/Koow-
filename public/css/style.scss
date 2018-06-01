@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900');
 $principal: 'Nunito',
 sans-serif;
-$colorp: #0EAA65;
-$verdeOscuro:rgb(4,121,68);
+$colorp: rgb(0, 0, 0);
+$verdeOscuro:#181819;
 $color: #E5E5E5;
 $balnco: #ffffff;
 $white: #FFF;
 $black: #000;
 
 $rojo:FFFFF;
-//----------------------------------------header
+
+
 header {
     position: fixed;
     top: 0;

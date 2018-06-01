@@ -1,8 +1,15 @@
 
 .player-controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+
   color: #FFF;
   cursor: pointer;
-  display: block;
+  
   font-size: 40px;
   height: 1em;
   position: relative;
@@ -14,10 +21,11 @@
 .player-controls .audio-label {
   line-height: 1;
   position: absolute;
-  right: 1.35em;
+
   text-align: right;
   text-transform: uppercase;
-  top: -0.4em;
+  top: 2em;
+ 
 }
 .player-controls .audio-label span {
   font-size: 18px;

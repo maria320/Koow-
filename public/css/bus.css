@@ -9,7 +9,7 @@ p {
 }
 
 a {
-  color: #cecece;
+  color: #201f21;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 
 .dentro .filtros {
   width: 20%;
-  background: #0EAA65;
+  background: black;
   float: left;
   top: 0;
 }
@@ -177,7 +177,7 @@ body {
 .dentro .libros .lib .libro .boton .agregar {
   margin: .5em 0;
   border: none;
-  background: #0EAA65;
+  background: black;
   color: #FFF;
   font-size: 10px;
   border-radius: 25px;
