@@ -28,12 +28,13 @@ MongoClient.connect('mongodb+srv:finalweb-z5kte.mongodb.net/tienda', {
     app.listen(process.env.PORT || 4321);
 });
 /*Esta parte es para cargar las paginas*/
+//taller 1
 app.get('/', (req, res) => {
     res.render('index', {
         tittle: "Home"
     });
 })
-
+// final 
 app.get('/playlist', (req, res) => {
     res.render('playlist', {
         tittle: "PlayList"
@@ -66,9 +67,9 @@ app.get('/buscador', (req, res) => {
             clasificacion: req.query.clasificacion
         });
 
-    if (req.query.calificacion)
+    if (req.query.biblioteca)
         prod.filter({
-            calificacion: parseInt(req.query.calificacion)
+            biblioteca: parseInt(req.query.biblioteca)
         });
 
     prod.toArray((err, result) => {

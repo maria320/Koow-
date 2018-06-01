@@ -33,11 +33,11 @@
             </div>
 
             <div class="enlaces" id="enlaces">
-                <a class="home" href="/">New</a>
-                <a class="how" href="/buscador">Books</a>
+               <a class="home" href="/">New</a>
+                <a class="how" href="/buscador">Gallery</a>
                 <a class="book" href="#">Tops</a>
-                <a class="contact" href="#">Ebook</a>
-                <a class="tienda " href="/carrito">
+                <a class="contact" href="#">Play List</a>
+                <a class="tienda" href="/carrito">
 
                     <div>
                         <img src="Data/ICONO.png" width="26px" alt="" class="shopping-cart">
@@ -85,26 +85,25 @@
                 <div class="filbotones">
                     <div class="filtrogenero">
                         <h2>Gender</h2>
-                        <a href="/buscador?genero=Drama">Drama</a>
-                        <a href="/buscador?genero=Children's literature">Children's literature</a>
-                        <a href="/buscador?genero=Fantasy">Fantasy</a>
-                        <a href="/buscador?genero=Horror">Horror</a>
+                        <a href="/buscador?genero=Pop">Pop</a>
+                        <a href="/buscador?genero=Rock">Rock</a>
+                        <a href="/buscador?genero=Metal">Metal</a>
+                        <a href="/buscador?genero=Jazz">Jazz</a>
                         <a href="/buscador">All</a>
                     </div>
                     <div class="filtroidioma">
                         <h2>Language.</h2>
                         <a href="/buscador?idioma=English">English</a>
-                        <a href="/buscador?idioma=French">French</a>
+                        <a href="/buscador?idioma=Japanese">Japanese</a>
                         <a href="/buscador?idioma=Spanish">Spanish</a>
                         <a href="/buscador?idioma=German">German</a>
                         <a href="/buscador">All</a>
                     </div>
                     <div class="filtroclasificacion">
                         <h2>Clasificacion</h2>
-                        <a href="/buscador?clasificacion=Illustrations">Illustrations</a>
-                        <a href="/buscador?clasificacion=Graphic Novels">Graphic Novels</a>
-                        <a href="/buscador?clasificacion=Illustrated story">Illustrated story</a>
-                        <a href="/buscador?clasificacion=Illustrated novel">Illustrated novel</a>
+                        <a href="/buscador?clasificacion=One Hit">One Hit</a>
+                        <a href="/buscador?clasificacion=Album">Album</a>
+                        <a href="/buscador?clasificacion=Song">Song</a>
                         <a href="/buscador">All</a>
                     </div>
                     <div class="filtrocalificacion">
@@ -134,7 +133,7 @@
                                 </a>
                             </p>
                             <p class="desc">
-                                Pages: {{Page}}
+                                Pages: {{genero}}
                             </p>
                             <p class="desc">
                                 Language: {{idioma}}
@@ -146,7 +145,7 @@
                                 Start: {{calificacion}}
                             </p>
                             <p class="desc">
-                                Start: {{clasificacion}}
+                                Start: {{biblioteca}}
                             </p>
                         </div>
                         <div class="boton" align="center">
