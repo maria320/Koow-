@@ -48,19 +48,19 @@
 }
 
 .slide:first-child .slide__text {
-	color: #ffae1a;
+	color: #fff;
 }
 
 .slide:nth-child(2) .slide__text {
-	color: #58e8b3;
+	color: #fff;
 }
 
 .slide:nth-child(3) .slide__text {
-	color: #15c9ff;
+	color: #fff;
 }
 
 .slide:nth-child(4) .slide__text {
-	color: #ffc107;
+	color: #fff;
 }
 
 .slide:nth-child(5) .slide__text {

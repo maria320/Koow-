@@ -40,7 +40,11 @@ app.get('/playlist', (req, res) => {
         tittle: "PlayList"
     });
 })
-
+app.get('/selecplay', (req, res) => {
+    res.render('selecplay', {
+        tittle: "Selecplay"
+    });
+})
 app.get('/carrito', (req, res) => {
     res.render('carrito', {
         tittle: "Carrito"
