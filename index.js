@@ -40,6 +40,21 @@ app.get('/playlist', (req, res) => {
         tittle: "PlayList"
     });
 })
+app.get('/playlistUno', (req, res) => {
+    res.render('playlistUno', {
+        tittle: "PlayListUno"
+    });
+})
+app.get('/playlistDos', (req, res) => {
+    res.render('playlistDos', {
+        tittle: "PlayListDos"
+    });
+})
+app.get('/playlistTres', (req, res) => {
+    res.render('playlistTres', {
+        tittle: "PlayListTres"
+    });
+})
 app.get('/selecplay', (req, res) => {
     res.render('selecplay', {
         tittle: "Selecplay"

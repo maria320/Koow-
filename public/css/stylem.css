@@ -87,7 +87,7 @@ header .menu .logo img {
   height: 50rem;
   position: relative;
   top: 80px;
-  background: #355C7D;
+  background: #ffffff;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, rgba(255, 217, 0, 0.712), #49a086, #70a049);
   background: linear-gradient(to right, rgba(255, 217, 0, 0.712), #49a086, #70a049);
